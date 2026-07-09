@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Lovey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sparkles" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" aria-label="Personal postcard">
+      <img class="hero-art" src="assets/fairy-garden-postcard.png" alt="A colorful magical garden with flowers and butterflies">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">For the most important woman</p>
+        <h1>My Sweet Irina</h1>
+        <div class="hero-letter">
+          <p><strong>The woman of my heart, my mamacita.</strong> You matter to me. Remember I am always yours, I will forever be yours, and I belong only with you.</p>
+          <p>I am staying forever loyal to you and you only. You are mine and we are together no matter what. I am the proudest, you make me feel joy, I am the happiest, and I love you and will love you forever, no matter what.</p>
+          <p>You really make me the proudest and the happiest. Seeing you succeed and make progress gives me joy. Thank you for existing, thank you for coming into my life, and thank you for staying here.</p>
+          <p>Remember, of course, it is us against the world. You mean everything to me, and I will do everything and go through anything if I know that you are on the other end. I will always come to you only.</p>
+        </div>
+        <button class="primary-action" id="openPostcard" type="button">Open your postcard</button>
+      </div>
+    </section>
+
+    <section class="postcard-section" id="postcard">
+      <div class="postcard" id="postcardCard">
+        <div class="postcard-face postcard-front">
+          <div class="stamp">LOVE</div>
+          <p class="postcard-small">Special delivery</p>
+          <h2>To the girl who makes ordinary days feel editorial</h2>
+          <p>Tap to flip this little note.</p>
+        </div>
+        <div class="postcard-face postcard-back">
+          <p class="postcard-small">Dear Lovey,</p>
+          <h2>You are my favorite hello.</h2>
+          <p>I made this for you because you deserve something bright, soft, silly, beautiful, and completely yours. It has your flowers, your fashion-girl energy, your matcha mood, your gym glow, and a tiny dark-romance corner because even sweetness needs a little drama.</p>
+          <button class="small-action" id="sealKiss" type="button">Seal it with a kiss</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="moodboard" aria-label="Everything she loves">
+      <div class="section-heading">
+        <p class="eyebrow">Her universe</p>
+        <h2>Pilates, matcha, fashion, and a little chaos</h2>
+      </div>
+
+      <div class="editorial-layout">
+        <article class="magazine-cover" aria-label="Fashion magazine inspired cover">
+          <p class="cover-kicker">Lovey Issue</p>
+          <h3>Her Edit</h3>
+          <div class="cover-portrait" aria-hidden="true">
+            <span class="cover-head"></span>
+            <span class="cover-body"></span>
+            <span class="cover-matcha"></span>
+          </div>
+          <p class="cover-line cover-line-top">Pilates glow</p>
+          <p class="cover-line cover-line-mid">Matcha in hand</p>
+          <p class="cover-line cover-line-low">Future editor energy</p>
+        </article>
+
+        <div class="mood-grid">
+          <article class="mood-card">
+            <span class="mood-icon">01</span>
+            <h3>Pilates girlie</h3>
+            <p>Soft strength, clean sets, long stretches, and main-character posture.</p>
+          </article>
+          <article class="mood-card">
+            <span class="mood-icon">02</span>
+            <h3>Gym glow</h3>
+            <p>Strong, focused, pretty, powerful. The kind of energy that walks in first.</p>
+          </article>
+          <article class="mood-card">
+            <span class="mood-icon">03</span>
+            <h3>Matcha ritual</h3>
+            <p>Green drink, cute cup, calm morning, expensive taste.</p>
+          </article>
+          <article class="mood-card">
+            <span class="mood-icon">04</span>
+            <h3>Dark romance shelf</h3>
+            <p>Pretty covers, dangerous tension, dramatic chapters, no judgment from me.</p>
+          </article>
+          <article class="mood-card">
+            <span class="mood-icon">05</span>
+            <h3>Chase Atlantic nights</h3>
+            <p>Moody lights, late drives, glossy eyeliner, and that exact after-dark feeling.</p>
+          </article>
+          <article class="mood-card">
+            <span class="mood-icon">06</span>
+            <h3>VOGUE dream desk</h3>
+            <p>Future editor or designer. Taste sharp enough to run the whole page.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="memory-strip" aria-label="Photo memories">
+      <div class="section-heading">
+        <p class="eyebrow">Our little gallery</p>
+        <h2>Pieces of us</h2>
+      </div>
+      <div class="photo-grid">
+        <figure class="photo-slot">
+          <img src="assets/kitty.jpg" alt="A sweet moment petting a cat together">
+          <figcaption>Soft moments with you</figcaption>
+        </figure>
+        <figure class="photo-slot">
+          <img src="assets/dark_r.jpg" alt="Dark romance book cover mood">
+          <figcaption>Your dark romance corner</figcaption>
+        </figure>
+        <figure class="photo-slot">
+          <img src="assets/mcr.jpg" alt="A shared music store memory with a record">
+          <figcaption>Our music-store memory</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="games" aria-label="Games and surprises">
+      <div class="section-heading">
+        <p class="eyebrow">Mini games</p>
+        <h2>Pick a surprise</h2>
+      </div>
+
+      <div class="game-grid">
+        <article class="game-panel">
+          <h3>Matcha fortune</h3>
+          <p id="fortuneText">Press the bloom for a tiny message made for her.</p>
+          <button class="icon-button" id="fortuneButton" type="button" aria-label="Get a matcha fortune">&#10047;</button>
+        </article>
+
+        <article class="game-panel">
+          <h3>Butterfly hunt</h3>
+          <p>Catch 10 butterflies before time runs out.</p>
+          <div class="score-row">
+            <span>Score <strong id="score">0</strong></span>
+            <span>Time <strong id="timeLeft">20</strong>s</span>
+          </div>
+          <div class="butterfly-field" id="butterflyField">
+            <button class="butterfly" id="butterfly" type="button" aria-label="Catch butterfly">&#129419;</button>
+          </div>
+          <button class="small-action" id="startHunt" type="button">Start</button>
+        </article>
+
+        <article class="game-panel">
+          <h3>Love meter</h3>
+          <p>Scientifically unserious. Emotionally accurate.</p>
+          <div class="meter">
+            <div class="meter-fill" id="meterFill"></div>
+          </div>
+          <button class="small-action" id="chargeLove" type="button">Charge it</button>
+        </article>
+
+        <article class="game-panel">
+          <h3>Runway brief</h3>
+          <p id="briefText">Generate her next iconic editorial concept.</p>
+          <button class="small-action" id="briefButton" type="button">Create brief</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-note">
+      <h2>One last thing</h2>
+      <p>You are sunshine with taste, softness with strength, and the prettiest part of my day. This whole page is just a tiny attempt at showing you that I notice the details: what you love, what you dream about, and how special you are.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
